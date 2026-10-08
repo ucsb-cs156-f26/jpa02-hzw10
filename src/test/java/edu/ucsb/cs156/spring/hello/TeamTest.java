@@ -46,8 +46,8 @@ public class TeamTest {
         Team team2 = new Team("test-team2");
         assertTrue(team.equals(team1), "equals() error on same name and members");
         assertTrue(!team.equals(team2), "equals() error on diff name and same members");
-        //team1.addMember("Guy");
-        //assertTrue(!team.equals(team1), "equals() error on same name and diff members");
+        team1.addMember("Guy");
+        assertTrue(!team.equals(team1), "equals() error on same name and diff members");
     }
 
     @Test
